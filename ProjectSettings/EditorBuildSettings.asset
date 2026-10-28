@@ -6,7 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/HomeScreen.unity
+    guid: 3a613fa6021e6cb459bf58a5f62d2b5f
+  - enabled: 1
+    path: Assets/Scenes/Earth.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Mars.unity
+    guid: c290c1cd686bea54b9910d529a215f00
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 117cf85f06a8b9643a56be9de0da9a04, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: af79cba10a2436a479a532c4b42a3f49, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d2b3a3e88b8de7543a03346018714de3, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 78f3005b0a84632438d5b885066afa9e, type: 2}
