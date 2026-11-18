@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5597373620dc1cb43a4b3aca347b2b16, type: 2}
     - target: {fileID: 9144704592966362808, guid: 2ffb4eb6f4d011845ac73009fb912c18, type: 3}
       propertyPath: m_Name
-      value: Saturn (1)
+      value: 'Saturn '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -586,6 +586,7 @@ MonoBehaviour:
   arCamera: {fileID: 1054301004}
   planetRoot: {fileID: 18682209}
   distance: 2
+  heightOffset: 0
 --- !u!114 &904755759
 MonoBehaviour:
   m_ObjectHideFlags: 0
