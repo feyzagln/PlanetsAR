@@ -4,10 +4,16 @@ using UnityEngine.XR.ARFoundation;
 
 public class ARRefreshController : MonoBehaviour
 {
-    public ARSession arSession;       // Sahnedeki AR Session objesi
-    public Transform arCamera;        // Main Camera (XR Origin > Camera Offset > Main Camera)
-    public Transform planetRoot;      // Gezegenlerin ortak parent objesi
-    public float distance = 2f;       // Kameradan uzaklık (metre)
+    public ARSession arSession;
+    public Transform arCamera;
+    public Transform planetRoot;
+    public float distance = 2f;       // Kameradan uzaklık
+    public float heightOffset = 0f;   // + yukarı, - aşağı (metre)
+
+    private void Start()
+    {
+        StartCoroutine(PlaceRoutine());
+    }
 
     public void RefreshAR()
     {
@@ -17,19 +23,26 @@ public class ARRefreshController : MonoBehaviour
 
     private IEnumerator RefreshRoutine()
     {
-        // 1) ARCore oturumunu sıfırla (dünya koordinatı ve takip baştan başlar)
         arSession.Reset();
-
-        // 2) Takip tekrar başlayana kadar bekle
         yield return null;
+        yield return PlaceRoutine();
+    }
+
+    private IEnumerator PlaceRoutine()
+    {
+        // Takip başlayana kadar bekle
         yield return new WaitUntil(() =>
             ARSession.state == ARSessionState.SessionTracking);
+        yield return new WaitForSeconds(0.3f); // kamera pozu otursun
 
-        // 3) Gezegeni kameranın baktığı yönün önüne yerleştir
         Vector3 forward = arCamera.forward;
-        forward.y = 0f;               // yatay düzlemde tut
+        forward.y = 0f;
+        if (forward.sqrMagnitude < 0.001f) forward = arCamera.up; // telefon yere bakıyorsa
         forward.Normalize();
 
-        planetRoot.position = arCamera.position + forward * distance;
+        Vector3 pos = arCamera.position + forward * distance;
+        pos.y = arCamera.position.y + heightOffset;   // göz hizası
+
+        planetRoot.position = pos;
     }
 }

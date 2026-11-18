@@ -34056,12 +34056,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE0
 		return L_4;
 	}
 }
-// Method Definition Index: 62819
-// Method Definition Index: 62819
-// Method Definition Index: 62819
-// Method Definition Index: 62819
-// Method Definition Index: 62819
-// Method Definition Index: 62819
+// Method Definition Index: 62827
+// Method Definition Index: 62827
+// Method Definition Index: 62827
+// Method Definition Index: 62827
+// Method Definition Index: 62827
+// Method Definition Index: 62827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* ILSupport_AddressOf_TisIl2CppFullySharedGenericStruct_m373C1FEADC4248F808294AA8958583E51840E129_fshared (Il2CppFullySharedGenericStruct* ___0_thing, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -34070,14 +34070,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* ILSupport_AddressOf_TisIl2CppFullyShare
 		return (void*)(L_0);
 	}
 }
-// Method Definition Index: 62820
-// Method Definition Index: 62820
-// Method Definition Index: 62820
-// Method Definition Index: 62820
-// Method Definition Index: 62820
-// Method Definition Index: 62820
-// Method Definition Index: 62820
-// Method Definition Index: 62820
+// Method Definition Index: 62828
+// Method Definition Index: 62828
+// Method Definition Index: 62828
+// Method Definition Index: 62828
+// Method Definition Index: 62828
+// Method Definition Index: 62828
+// Method Definition Index: 62828
+// Method Definition Index: 62828
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppFullySharedGenericStruct* ILSupport_AsRef_TisIl2CppFullySharedGenericStruct_mE9195E637265E7F6E317ACE31DCBA0EA7A989E30_fshared (Il2CppFullySharedGenericStruct* ___0_thing, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -34086,7 +34086,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppFullySharedGenericStruct* ILSupport_AsR
 		return L_0;
 	}
 }
-// Method Definition Index: 62820
+// Method Definition Index: 62828
 // Method Definition Index: 14708
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleList_1_t5D2FA4535A553635ADCE6E1E3758E1FA02160E6F InlineStyleAccess_GetStyleList_TisEasingFunction_t5197D3B06056326A8B5C96032CDEBD5D3BDCA7A4_mEAC37B7842A499FEFF6A7B2EFA16BE43E3B5C8E3 (InlineStyleAccess_t5CA7877999C9442491A220AE50D605C84D09A165* __this, int32_t ___0_id, const RuntimeMethod* method) 
 {
