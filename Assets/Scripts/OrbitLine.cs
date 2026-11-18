@@ -5,12 +5,12 @@ public class OrbitLine : MonoBehaviour
 {
     public PlanetOrbit planet;
     public int segments = 100;
-    public float lineWidth = 0.003f;
+    public float lineWidth = 0.005f;
 
     private void Start()
     {
         var lr = GetComponent<LineRenderer>();
-        lr.useWorldSpace = false;          // Root'la birlikte hareket etsin
+        lr.useWorldSpace = false;   // SolarSystemRoot ile birlikte hareket eder
         lr.loop = true;
         lr.widthMultiplier = lineWidth;
         lr.positionCount = segments;
