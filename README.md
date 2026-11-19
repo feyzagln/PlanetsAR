@@ -106,3 +106,7 @@ Android build almak için:
 
 Bu proje için ayrıca bir lisans dosyası tanımlanmamıştır. Kullanım ve dağıtım
 koşulları için proje sahibine başvurun.
+
+Feyza Gülen 
+2023555402
+
